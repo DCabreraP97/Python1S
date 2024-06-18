@@ -65,7 +65,7 @@ def imprimir_hoja_ruta(pedidos):
         
         if opc_hoja_ruta == 1:
             with open("Sector norte.txt","w") as archivo1:
-                contenido = pedidos[{"Sector"}]
+                contenido = pedidos["Sector","norte"]
             print(contenido)
 
         if opc_hoja_ruta == 2:
@@ -74,6 +74,6 @@ def imprimir_hoja_ruta(pedidos):
             print(contenido)
 
         if opc_hoja_ruta == 3:
-            with open("Sector norte.txt","w") as archivo3:
+            with open("Sector sur.txt","w") as archivo3:
                 contenido = pedidos["Sector","sur"]
             print(contenido)
